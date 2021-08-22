@@ -1,0 +1,11 @@
+0 3 slm. file haye pdf dobare barresi shavad.
+0 5 slm dust e aziz!
+8 5 haletun khube?
+show_ms 0
+4 3 farzad yadet bashe pdf haro behet bedam.              
+4 3 pdf haro vasat email kardam
+0 3 in che cherto pertie tu pdf ha neveshtin?
+0 3 farda saat 9:30 biaid otaghe man jenabe habibi!      
+show_msg 
+show_msg 3
+3 0 chashm hatman.

@@ -1,0 +1,55 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+void print_vector(vector<string> numbers){
+	for(int i = 0 ; i < numbers.size() ; i++){
+		cout << numbers[i] << " ";
+	}
+	cout << endl;
+}
+
+vector<string> reverser(vector<string> v_number , string previous_number , int size_stop){
+	string last_number = v_number.back();
+	v_number.pop_back();
+
+	if(v_number.size() <= 0){
+		v_number.push_back(previous_number);
+		v_number.push_back(last_number);
+		return v_number;
+	}
+
+	v_number = reverser(v_number , last_number , size_stop);
+	if(previous_number != ""){
+		if(v_number.size() >= size_stop){
+			v_number.push_back(previous_number);
+			return v_number;
+		}else{
+			last_number = v_number.back();
+			v_number.pop_back();
+			v_number.push_back(previous_number);
+			v_number.push_back(last_number);
+			return v_number;
+		}
+	}
+	return v_number;
+
+}
+
+int main(){
+	string input_number;
+	vector<string> vec_numbers;
+	while(cin >> input_number){
+		vec_numbers.push_back(input_number);
+	}
+
+	for(int i = 0 ; i < vec_numbers.size() - 1 ; i++){
+		vec_numbers = reverser(vec_numbers , "" , vec_numbers.size() - i);
+	}
+
+	print_vector(vec_numbers);
+
+	return 0;
+}

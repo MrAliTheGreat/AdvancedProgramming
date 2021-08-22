@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <center> <p>Already a Member? Login to Your Account!</p> </center>
+    <center> <a href="/login">Login Here!</a> </center>
+    <center> <h1>Shop AP</h1> </center>
+    <center> <h2>Sign up Today!</h2> </center>
+    <div>
+    <center>
+      <form action="/signup" method="post">
+        <p> <input name="email" type="text" placeholder="Email" /> </p>
+        <p> <input name="username" type="text" placeholder="Username" /> </p>
+        <p> <input name="password" type="password" placeholder="Password" /> </p>
+        <p> <input name="confirmPassword" type="password" placeholder="Confirm Password" /> </p>
+        <p>
+            <select name="userType">
+              <option value="seller">Seller</option>
+              <option value="buyer">Buyer</option>
+            </select>
+        </p>
+        <p> 
+          <button type="submit" >Signup</button>
+        </p>
+      </form>
+    </center>
+    </div>
+  </body>
+</html>

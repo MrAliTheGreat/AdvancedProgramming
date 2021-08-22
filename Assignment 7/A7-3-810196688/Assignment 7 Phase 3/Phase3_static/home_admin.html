@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body style="text-align: center;">
+    <center> <a href="/logout">Signout From Account</a> </center>
+    <h1>Admin Home</h1>
+    <h2>Upload Product Files</h2>
+    <div>
+      <form action="/admin" method="post" enctype="multipart/form-data">
+        <center> <p>
+          <input name="file_type" type="text" placeholder="File Type" />
+          <input name="file" type="file" />
+        </center> </p>
+        <p> <button type="submit" >Upload</button> </p>
+      </form>
+    </div>
+  </body>
+</html>
